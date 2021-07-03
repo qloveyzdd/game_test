@@ -1,0 +1,2 @@
+/bin/ar qc libcreature_library.a  CMakeFiles/creature_library.dir/private/Creature.cpp.o
+/bin/ranlib libcreature_library.a
