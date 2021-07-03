@@ -1,7 +1,10 @@
 aux_source_directory(./private adventure)
 
-add_subdirectory(../Creature)
+include_directories(./public)
+include_directories(../Creature/public)
 
-add_library(adventure_lib SHARED ${adventure})
+link_directories(../Creature)
 
-target_link_libraries(adventure_lib creature_lib)
+add_library(adventure_library SHARED ${adventure})
+
+target_link_libraries(adventure_library PRIVATE creature_library)

@@ -4,3 +4,6 @@
 /home/qlovey/game_test/build/Creature/CMakeFiles/rebuild_cache.dir
 /home/qlovey/game_test/build/Creature/CMakeFiles/edit_cache.dir
 /home/qlovey/game_test/build/Creature/CMakeFiles/creature_library.dir
+/home/qlovey/game_test/build/Adventure/CMakeFiles/edit_cache.dir
+/home/qlovey/game_test/build/Adventure/CMakeFiles/rebuild_cache.dir
+/home/qlovey/game_test/build/Adventure/CMakeFiles/adventure_library.dir

@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "../Adventure/CMakeLists.txt"
   "../CMakeLists.txt"
   "../Creature/CMakeLists.txt"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
@@ -43,10 +44,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "Creature/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Adventure/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/game.dir/DependInfo.cmake"
   "Creature/CMakeFiles/creature_library.dir/DependInfo.cmake"
+  "Adventure/CMakeFiles/adventure_library.dir/DependInfo.cmake"
   )

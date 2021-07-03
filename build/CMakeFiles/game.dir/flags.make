@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/qlovey/game_test/./Creature/public -I/home/qlovey/game_test/./Adventure/public 
 

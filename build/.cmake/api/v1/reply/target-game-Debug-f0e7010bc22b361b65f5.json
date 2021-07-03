@@ -11,7 +11,8 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries"
+			"target_link_libraries",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -25,13 +26,31 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 14,
+				"line" : 16,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 16,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 14,
 				"parent" : 0
 			}
 		]
@@ -43,6 +62,17 @@
 			[
 				{
 					"fragment" : "-g  "
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/home/qlovey/game_test/./Creature/public"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/qlovey/game_test/./Adventure/public"
 				}
 			],
 			"language" : "CXX",
@@ -57,6 +87,10 @@
 		{
 			"backtrace" : 2,
 			"id" : "creature_library::@35e153a114fec587783f"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "adventure_library::@d94b59700e788789329f"
 		}
 	],
 	"id" : "game::@6890427a1f51a3e7e1df",
@@ -73,8 +107,17 @@
 				"role" : "flags"
 			},
 			{
+				"fragment" : "-Wl,-rpath,/home/qlovey/game_test/build/Adventure",
+				"role" : "libraries"
+			},
+			{
 				"backtrace" : 2,
 				"fragment" : "Creature/libcreature_library.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "Adventure/libadventure_library.so",
 				"role" : "libraries"
 			}
 		],

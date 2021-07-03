@@ -1,5 +1,6 @@
 #include <iostream>
-//#include"Creature.h"
+#include"Creature.h"
+#include"Adventure.h"
 
 int main()
 {

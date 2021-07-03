@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-9 -fPIC -g  -shared -Wl,-soname,libadventure_library.so -o libadventure_library.so CMakeFiles/adventure_library.dir/private/Adventure.cpp.o   -L/home/qlovey/game_test/Adventure/../Creature  -Wl,-rpath,/home/qlovey/game_test/Adventure/../Creature ../Creature/libcreature_library.a 
