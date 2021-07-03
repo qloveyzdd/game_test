@@ -6,3 +6,17 @@
 
 #IncludeRegexTransform: 
 
+../Adventure/public/Adventure.h
+Creature.h
+../Adventure/public/Creature.h
+string
+-
+
+../Creature/public/Creature.h
+iostream
+-
+
+/home/qlovey/game_test/Adventure/private/Adventure.cpp
+Adventure.h
+/home/qlovey/game_test/Adventure/private/Adventure.h
+

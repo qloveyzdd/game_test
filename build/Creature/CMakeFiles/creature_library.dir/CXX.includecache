@@ -6,3 +6,11 @@
 
 #IncludeRegexTransform: 
 
+../Creature/public/Creature.h
+iostream
+-
+
+/home/qlovey/game_test/Creature/private/Creature.cpp
+Creature.h
+/home/qlovey/game_test/Creature/private/Creature.h
+

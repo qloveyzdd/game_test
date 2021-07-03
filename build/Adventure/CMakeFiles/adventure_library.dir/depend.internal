@@ -3,4 +3,5 @@
 
 Adventure/CMakeFiles/adventure_library.dir/private/Adventure.cpp.o
  ../Adventure/public/Adventure.h
+ ../Creature/public/Creature.h
  /home/qlovey/game_test/Adventure/private/Adventure.cpp

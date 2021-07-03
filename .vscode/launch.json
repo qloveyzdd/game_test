@@ -22,6 +22,10 @@
                     "ignoreFailures": true
                 }
             ],
+            "sourceFileMap": 
+            {
+                "/build/glibc-eX1tMB/glibc-2.31":"/usr/src/glibc"
+            },
             // "preLaunchTask": "C/C++: g++ 生成活动文件",
             "miDebuggerPath": "/bin/gdb"
         }
