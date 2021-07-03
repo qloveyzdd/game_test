@@ -62,7 +62,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fPIC  "
+					"fragment" : " -g -O2 -Wall -g -fPIC  "
 				}
 			],
 			"defines" : 

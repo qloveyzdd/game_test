@@ -1,17 +1,17 @@
 [
 {
   "directory": "/home/qlovey/game_test/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/qlovey/game_test/./Creature/public -I/home/qlovey/game_test/./Adventure/public  -g   -o CMakeFiles/game.dir/main.cpp.o -c /home/qlovey/game_test/main.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/qlovey/game_test/./Creature/public -I/home/qlovey/game_test/./Adventure/public   -g -O2 -Wall -g   -o CMakeFiles/game.dir/main.cpp.o -c /home/qlovey/game_test/main.cpp",
   "file": "/home/qlovey/game_test/main.cpp"
 },
 {
   "directory": "/home/qlovey/game_test/build/Creature",
-  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/qlovey/game_test/Creature/./public  -g   -o CMakeFiles/creature_library.dir/private/Creature.cpp.o -c /home/qlovey/game_test/Creature/private/Creature.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/qlovey/game_test/Creature/./public   -g -O2 -Wall -g   -o CMakeFiles/creature_library.dir/private/Creature.cpp.o -c /home/qlovey/game_test/Creature/private/Creature.cpp",
   "file": "/home/qlovey/game_test/Creature/private/Creature.cpp"
 },
 {
   "directory": "/home/qlovey/game_test/build/Adventure",
-  "command": "/bin/x86_64-linux-gnu-g++-9  -Dadventure_library_EXPORTS -I/home/qlovey/game_test/Adventure/./public -I/home/qlovey/game_test/Adventure/../Creature/public  -g -fPIC   -o CMakeFiles/adventure_library.dir/private/Adventure.cpp.o -c /home/qlovey/game_test/Adventure/private/Adventure.cpp",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dadventure_library_EXPORTS -I/home/qlovey/game_test/Adventure/./public -I/home/qlovey/game_test/Adventure/../Creature/public   -g -O2 -Wall -g -fPIC   -o CMakeFiles/adventure_library.dir/private/Adventure.cpp.o -c /home/qlovey/game_test/Adventure/private/Adventure.cpp",
   "file": "/home/qlovey/game_test/Adventure/private/Adventure.cpp"
 }
 ]
