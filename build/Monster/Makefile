@@ -125,6 +125,33 @@ monster_library/fast:
 	cd /home/qlovey/game_test/build && $(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/build
 .PHONY : monster_library/fast
 
+private/Dragon.o: private/Dragon.cpp.o
+
+.PHONY : private/Dragon.o
+
+# target to build an object file
+private/Dragon.cpp.o:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/private/Dragon.cpp.o
+.PHONY : private/Dragon.cpp.o
+
+private/Dragon.i: private/Dragon.cpp.i
+
+.PHONY : private/Dragon.i
+
+# target to preprocess a source file
+private/Dragon.cpp.i:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/private/Dragon.cpp.i
+.PHONY : private/Dragon.cpp.i
+
+private/Dragon.s: private/Dragon.cpp.s
+
+.PHONY : private/Dragon.s
+
+# target to generate assembly for a file
+private/Dragon.cpp.s:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/private/Dragon.cpp.s
+.PHONY : private/Dragon.cpp.s
+
 private/Monster.o: private/Monster.cpp.o
 
 .PHONY : private/Monster.o
@@ -152,6 +179,60 @@ private/Monster.cpp.s:
 	cd /home/qlovey/game_test/build && $(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/private/Monster.cpp.s
 .PHONY : private/Monster.cpp.s
 
+private/Mummy.o: private/Mummy.cpp.o
+
+.PHONY : private/Mummy.o
+
+# target to build an object file
+private/Mummy.cpp.o:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/private/Mummy.cpp.o
+.PHONY : private/Mummy.cpp.o
+
+private/Mummy.i: private/Mummy.cpp.i
+
+.PHONY : private/Mummy.i
+
+# target to preprocess a source file
+private/Mummy.cpp.i:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/private/Mummy.cpp.i
+.PHONY : private/Mummy.cpp.i
+
+private/Mummy.s: private/Mummy.cpp.s
+
+.PHONY : private/Mummy.s
+
+# target to generate assembly for a file
+private/Mummy.cpp.s:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/private/Mummy.cpp.s
+.PHONY : private/Mummy.cpp.s
+
+private/Witch.o: private/Witch.cpp.o
+
+.PHONY : private/Witch.o
+
+# target to build an object file
+private/Witch.cpp.o:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/private/Witch.cpp.o
+.PHONY : private/Witch.cpp.o
+
+private/Witch.i: private/Witch.cpp.i
+
+.PHONY : private/Witch.i
+
+# target to preprocess a source file
+private/Witch.cpp.i:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/private/Witch.cpp.i
+.PHONY : private/Witch.cpp.i
+
+private/Witch.s: private/Witch.cpp.s
+
+.PHONY : private/Witch.s
+
+# target to generate assembly for a file
+private/Witch.cpp.s:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/private/Witch.cpp.s
+.PHONY : private/Witch.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -161,9 +242,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... monster_library"
+	@echo "... private/Dragon.o"
+	@echo "... private/Dragon.i"
+	@echo "... private/Dragon.s"
 	@echo "... private/Monster.o"
 	@echo "... private/Monster.i"
 	@echo "... private/Monster.s"
+	@echo "... private/Mummy.o"
+	@echo "... private/Mummy.i"
+	@echo "... private/Mummy.s"
+	@echo "... private/Witch.o"
+	@echo "... private/Witch.i"
+	@echo "... private/Witch.s"
 .PHONY : help
 
 

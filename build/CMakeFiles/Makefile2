@@ -143,7 +143,7 @@ CMakeFiles/game.dir/all: Monster/CMakeFiles/monster_library.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles 0
 .PHONY : CMakeFiles/game.dir/rule
@@ -220,12 +220,12 @@ Monster/CMakeFiles/monster_library.dir/all: Creature/CMakeFiles/creature_library
 Monster/CMakeFiles/monster_library.dir/all: Adventure/CMakeFiles/adventure_library.dir/all
 	$(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/depend
 	$(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=10,11 "Built target monster_library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=10,11,12,13,14 "Built target monster_library"
 .PHONY : Monster/CMakeFiles/monster_library.dir/all
 
 # Build rule for subdir invocation for target.
 Monster/CMakeFiles/monster_library.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 Monster/CMakeFiles/monster_library.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles 0
 .PHONY : Monster/CMakeFiles/monster_library.dir/rule

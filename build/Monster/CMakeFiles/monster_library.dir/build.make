@@ -57,9 +57,22 @@ include Monster/CMakeFiles/monster_library.dir/progress.make
 # Include the compile flags for this target's objects.
 include Monster/CMakeFiles/monster_library.dir/flags.make
 
+Monster/CMakeFiles/monster_library.dir/private/Dragon.cpp.o: Monster/CMakeFiles/monster_library.dir/flags.make
+Monster/CMakeFiles/monster_library.dir/private/Dragon.cpp.o: ../Monster/private/Dragon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Monster/CMakeFiles/monster_library.dir/private/Dragon.cpp.o"
+	cd /home/qlovey/game_test/build/Monster && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/monster_library.dir/private/Dragon.cpp.o -c /home/qlovey/game_test/Monster/private/Dragon.cpp
+
+Monster/CMakeFiles/monster_library.dir/private/Dragon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monster_library.dir/private/Dragon.cpp.i"
+	cd /home/qlovey/game_test/build/Monster && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qlovey/game_test/Monster/private/Dragon.cpp > CMakeFiles/monster_library.dir/private/Dragon.cpp.i
+
+Monster/CMakeFiles/monster_library.dir/private/Dragon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monster_library.dir/private/Dragon.cpp.s"
+	cd /home/qlovey/game_test/build/Monster && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qlovey/game_test/Monster/private/Dragon.cpp -o CMakeFiles/monster_library.dir/private/Dragon.cpp.s
+
 Monster/CMakeFiles/monster_library.dir/private/Monster.cpp.o: Monster/CMakeFiles/monster_library.dir/flags.make
 Monster/CMakeFiles/monster_library.dir/private/Monster.cpp.o: ../Monster/private/Monster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Monster/CMakeFiles/monster_library.dir/private/Monster.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Monster/CMakeFiles/monster_library.dir/private/Monster.cpp.o"
 	cd /home/qlovey/game_test/build/Monster && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/monster_library.dir/private/Monster.cpp.o -c /home/qlovey/game_test/Monster/private/Monster.cpp
 
 Monster/CMakeFiles/monster_library.dir/private/Monster.cpp.i: cmake_force
@@ -70,19 +83,51 @@ Monster/CMakeFiles/monster_library.dir/private/Monster.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monster_library.dir/private/Monster.cpp.s"
 	cd /home/qlovey/game_test/build/Monster && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qlovey/game_test/Monster/private/Monster.cpp -o CMakeFiles/monster_library.dir/private/Monster.cpp.s
 
+Monster/CMakeFiles/monster_library.dir/private/Mummy.cpp.o: Monster/CMakeFiles/monster_library.dir/flags.make
+Monster/CMakeFiles/monster_library.dir/private/Mummy.cpp.o: ../Monster/private/Mummy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Monster/CMakeFiles/monster_library.dir/private/Mummy.cpp.o"
+	cd /home/qlovey/game_test/build/Monster && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/monster_library.dir/private/Mummy.cpp.o -c /home/qlovey/game_test/Monster/private/Mummy.cpp
+
+Monster/CMakeFiles/monster_library.dir/private/Mummy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monster_library.dir/private/Mummy.cpp.i"
+	cd /home/qlovey/game_test/build/Monster && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qlovey/game_test/Monster/private/Mummy.cpp > CMakeFiles/monster_library.dir/private/Mummy.cpp.i
+
+Monster/CMakeFiles/monster_library.dir/private/Mummy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monster_library.dir/private/Mummy.cpp.s"
+	cd /home/qlovey/game_test/build/Monster && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qlovey/game_test/Monster/private/Mummy.cpp -o CMakeFiles/monster_library.dir/private/Mummy.cpp.s
+
+Monster/CMakeFiles/monster_library.dir/private/Witch.cpp.o: Monster/CMakeFiles/monster_library.dir/flags.make
+Monster/CMakeFiles/monster_library.dir/private/Witch.cpp.o: ../Monster/private/Witch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Monster/CMakeFiles/monster_library.dir/private/Witch.cpp.o"
+	cd /home/qlovey/game_test/build/Monster && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/monster_library.dir/private/Witch.cpp.o -c /home/qlovey/game_test/Monster/private/Witch.cpp
+
+Monster/CMakeFiles/monster_library.dir/private/Witch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monster_library.dir/private/Witch.cpp.i"
+	cd /home/qlovey/game_test/build/Monster && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qlovey/game_test/Monster/private/Witch.cpp > CMakeFiles/monster_library.dir/private/Witch.cpp.i
+
+Monster/CMakeFiles/monster_library.dir/private/Witch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monster_library.dir/private/Witch.cpp.s"
+	cd /home/qlovey/game_test/build/Monster && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qlovey/game_test/Monster/private/Witch.cpp -o CMakeFiles/monster_library.dir/private/Witch.cpp.s
+
 # Object files for target monster_library
 monster_library_OBJECTS = \
-"CMakeFiles/monster_library.dir/private/Monster.cpp.o"
+"CMakeFiles/monster_library.dir/private/Dragon.cpp.o" \
+"CMakeFiles/monster_library.dir/private/Monster.cpp.o" \
+"CMakeFiles/monster_library.dir/private/Mummy.cpp.o" \
+"CMakeFiles/monster_library.dir/private/Witch.cpp.o"
 
 # External object files for target monster_library
 monster_library_EXTERNAL_OBJECTS =
 
+Monster/libmonster_library.so: Monster/CMakeFiles/monster_library.dir/private/Dragon.cpp.o
 Monster/libmonster_library.so: Monster/CMakeFiles/monster_library.dir/private/Monster.cpp.o
+Monster/libmonster_library.so: Monster/CMakeFiles/monster_library.dir/private/Mummy.cpp.o
+Monster/libmonster_library.so: Monster/CMakeFiles/monster_library.dir/private/Witch.cpp.o
 Monster/libmonster_library.so: Monster/CMakeFiles/monster_library.dir/build.make
 Monster/libmonster_library.so: Creature/libcreature_library.a
 Monster/libmonster_library.so: Adventure/libadventure_library.so
 Monster/libmonster_library.so: Monster/CMakeFiles/monster_library.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libmonster_library.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libmonster_library.so"
 	cd /home/qlovey/game_test/build/Monster && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/monster_library.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

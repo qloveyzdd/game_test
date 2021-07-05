@@ -4,7 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/qlovey/game_test/Monster/private/Dragon.cpp" "/home/qlovey/game_test/build/Monster/CMakeFiles/monster_library.dir/private/Dragon.cpp.o"
   "/home/qlovey/game_test/Monster/private/Monster.cpp" "/home/qlovey/game_test/build/Monster/CMakeFiles/monster_library.dir/private/Monster.cpp.o"
+  "/home/qlovey/game_test/Monster/private/Mummy.cpp" "/home/qlovey/game_test/build/Monster/CMakeFiles/monster_library.dir/private/Mummy.cpp.o"
+  "/home/qlovey/game_test/Monster/private/Witch.cpp" "/home/qlovey/game_test/build/Monster/CMakeFiles/monster_library.dir/private/Witch.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

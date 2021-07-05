@@ -31,7 +31,22 @@
 },
 {
   "directory": "/home/qlovey/game_test/build/Monster",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dmonster_library_EXPORTS -I/home/qlovey/game_test/Monster/./public -I/home/qlovey/game_test/Monster/../Creature/public -I/home/qlovey/game_test/Monster/../Adventure/public   -g -Wall -g -fPIC   -o CMakeFiles/monster_library.dir/private/Dragon.cpp.o -c /home/qlovey/game_test/Monster/private/Dragon.cpp",
+  "file": "/home/qlovey/game_test/Monster/private/Dragon.cpp"
+},
+{
+  "directory": "/home/qlovey/game_test/build/Monster",
   "command": "/bin/x86_64-linux-gnu-g++-9  -Dmonster_library_EXPORTS -I/home/qlovey/game_test/Monster/./public -I/home/qlovey/game_test/Monster/../Creature/public -I/home/qlovey/game_test/Monster/../Adventure/public   -g -Wall -g -fPIC   -o CMakeFiles/monster_library.dir/private/Monster.cpp.o -c /home/qlovey/game_test/Monster/private/Monster.cpp",
   "file": "/home/qlovey/game_test/Monster/private/Monster.cpp"
+},
+{
+  "directory": "/home/qlovey/game_test/build/Monster",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dmonster_library_EXPORTS -I/home/qlovey/game_test/Monster/./public -I/home/qlovey/game_test/Monster/../Creature/public -I/home/qlovey/game_test/Monster/../Adventure/public   -g -Wall -g -fPIC   -o CMakeFiles/monster_library.dir/private/Mummy.cpp.o -c /home/qlovey/game_test/Monster/private/Mummy.cpp",
+  "file": "/home/qlovey/game_test/Monster/private/Mummy.cpp"
+},
+{
+  "directory": "/home/qlovey/game_test/build/Monster",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dmonster_library_EXPORTS -I/home/qlovey/game_test/Monster/./public -I/home/qlovey/game_test/Monster/../Creature/public -I/home/qlovey/game_test/Monster/../Adventure/public   -g -Wall -g -fPIC   -o CMakeFiles/monster_library.dir/private/Witch.cpp.o -c /home/qlovey/game_test/Monster/private/Witch.cpp",
+  "file": "/home/qlovey/game_test/Monster/private/Witch.cpp"
 }
 ]
