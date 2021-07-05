@@ -70,18 +70,63 @@ Adventure/CMakeFiles/adventure_library.dir/private/Adventure.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/adventure_library.dir/private/Adventure.cpp.s"
 	cd /home/qlovey/game_test/build/Adventure && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qlovey/game_test/Adventure/private/Adventure.cpp -o CMakeFiles/adventure_library.dir/private/Adventure.cpp.s
 
+Adventure/CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.o: Adventure/CMakeFiles/adventure_library.dir/flags.make
+Adventure/CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.o: ../Adventure/private/DefensiveMage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Adventure/CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.o"
+	cd /home/qlovey/game_test/build/Adventure && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.o -c /home/qlovey/game_test/Adventure/private/DefensiveMage.cpp
+
+Adventure/CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.i"
+	cd /home/qlovey/game_test/build/Adventure && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qlovey/game_test/Adventure/private/DefensiveMage.cpp > CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.i
+
+Adventure/CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.s"
+	cd /home/qlovey/game_test/build/Adventure && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qlovey/game_test/Adventure/private/DefensiveMage.cpp -o CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.s
+
+Adventure/CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.o: Adventure/CMakeFiles/adventure_library.dir/flags.make
+Adventure/CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.o: ../Adventure/private/OffensiveMage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Adventure/CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.o"
+	cd /home/qlovey/game_test/build/Adventure && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.o -c /home/qlovey/game_test/Adventure/private/OffensiveMage.cpp
+
+Adventure/CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.i"
+	cd /home/qlovey/game_test/build/Adventure && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qlovey/game_test/Adventure/private/OffensiveMage.cpp > CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.i
+
+Adventure/CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.s"
+	cd /home/qlovey/game_test/build/Adventure && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qlovey/game_test/Adventure/private/OffensiveMage.cpp -o CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.s
+
+Adventure/CMakeFiles/adventure_library.dir/private/Rogue.cpp.o: Adventure/CMakeFiles/adventure_library.dir/flags.make
+Adventure/CMakeFiles/adventure_library.dir/private/Rogue.cpp.o: ../Adventure/private/Rogue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Adventure/CMakeFiles/adventure_library.dir/private/Rogue.cpp.o"
+	cd /home/qlovey/game_test/build/Adventure && /bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/adventure_library.dir/private/Rogue.cpp.o -c /home/qlovey/game_test/Adventure/private/Rogue.cpp
+
+Adventure/CMakeFiles/adventure_library.dir/private/Rogue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/adventure_library.dir/private/Rogue.cpp.i"
+	cd /home/qlovey/game_test/build/Adventure && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qlovey/game_test/Adventure/private/Rogue.cpp > CMakeFiles/adventure_library.dir/private/Rogue.cpp.i
+
+Adventure/CMakeFiles/adventure_library.dir/private/Rogue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/adventure_library.dir/private/Rogue.cpp.s"
+	cd /home/qlovey/game_test/build/Adventure && /bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qlovey/game_test/Adventure/private/Rogue.cpp -o CMakeFiles/adventure_library.dir/private/Rogue.cpp.s
+
 # Object files for target adventure_library
 adventure_library_OBJECTS = \
-"CMakeFiles/adventure_library.dir/private/Adventure.cpp.o"
+"CMakeFiles/adventure_library.dir/private/Adventure.cpp.o" \
+"CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.o" \
+"CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.o" \
+"CMakeFiles/adventure_library.dir/private/Rogue.cpp.o"
 
 # External object files for target adventure_library
 adventure_library_EXTERNAL_OBJECTS =
 
 Adventure/libadventure_library.so: Adventure/CMakeFiles/adventure_library.dir/private/Adventure.cpp.o
+Adventure/libadventure_library.so: Adventure/CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.o
+Adventure/libadventure_library.so: Adventure/CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.o
+Adventure/libadventure_library.so: Adventure/CMakeFiles/adventure_library.dir/private/Rogue.cpp.o
 Adventure/libadventure_library.so: Adventure/CMakeFiles/adventure_library.dir/build.make
 Adventure/libadventure_library.so: Creature/libcreature_library.a
 Adventure/libadventure_library.so: Adventure/CMakeFiles/adventure_library.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libadventure_library.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libadventure_library.so"
 	cd /home/qlovey/game_test/build/Adventure && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/adventure_library.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

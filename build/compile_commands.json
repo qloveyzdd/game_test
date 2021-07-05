@@ -15,6 +15,21 @@
   "file": "/home/qlovey/game_test/Adventure/private/Adventure.cpp"
 },
 {
+  "directory": "/home/qlovey/game_test/build/Adventure",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dadventure_library_EXPORTS -I/home/qlovey/game_test/Adventure/./public -I/home/qlovey/game_test/Adventure/../Creature/public   -g -Wall -g -fPIC   -o CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.o -c /home/qlovey/game_test/Adventure/private/DefensiveMage.cpp",
+  "file": "/home/qlovey/game_test/Adventure/private/DefensiveMage.cpp"
+},
+{
+  "directory": "/home/qlovey/game_test/build/Adventure",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dadventure_library_EXPORTS -I/home/qlovey/game_test/Adventure/./public -I/home/qlovey/game_test/Adventure/../Creature/public   -g -Wall -g -fPIC   -o CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.o -c /home/qlovey/game_test/Adventure/private/OffensiveMage.cpp",
+  "file": "/home/qlovey/game_test/Adventure/private/OffensiveMage.cpp"
+},
+{
+  "directory": "/home/qlovey/game_test/build/Adventure",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dadventure_library_EXPORTS -I/home/qlovey/game_test/Adventure/./public -I/home/qlovey/game_test/Adventure/../Creature/public   -g -Wall -g -fPIC   -o CMakeFiles/adventure_library.dir/private/Rogue.cpp.o -c /home/qlovey/game_test/Adventure/private/Rogue.cpp",
+  "file": "/home/qlovey/game_test/Adventure/private/Rogue.cpp"
+},
+{
   "directory": "/home/qlovey/game_test/build/Monster",
   "command": "/bin/x86_64-linux-gnu-g++-9  -Dmonster_library_EXPORTS -I/home/qlovey/game_test/Monster/./public -I/home/qlovey/game_test/Monster/../Creature/public -I/home/qlovey/game_test/Monster/../Adventure/public   -g -Wall -g -fPIC   -o CMakeFiles/monster_library.dir/private/Monster.cpp.o -c /home/qlovey/game_test/Monster/private/Monster.cpp",
   "file": "/home/qlovey/game_test/Monster/private/Monster.cpp"

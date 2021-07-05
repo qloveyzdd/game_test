@@ -5,6 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/qlovey/game_test/Adventure/private/Adventure.cpp" "/home/qlovey/game_test/build/Adventure/CMakeFiles/adventure_library.dir/private/Adventure.cpp.o"
+  "/home/qlovey/game_test/Adventure/private/DefensiveMage.cpp" "/home/qlovey/game_test/build/Adventure/CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.o"
+  "/home/qlovey/game_test/Adventure/private/OffensiveMage.cpp" "/home/qlovey/game_test/build/Adventure/CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.o"
+  "/home/qlovey/game_test/Adventure/private/Rogue.cpp" "/home/qlovey/game_test/build/Adventure/CMakeFiles/adventure_library.dir/private/Rogue.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

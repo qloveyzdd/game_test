@@ -3,6 +3,7 @@
 
 CMakeFiles/game.dir/main.cpp.o
  ../Adventure/public/Adventure.h
+ ../Adventure/public/Rogue.h
  ../Creature/public/Creature.h
  ../Monster/public/Monster.h
  /home/qlovey/game_test/main.cpp

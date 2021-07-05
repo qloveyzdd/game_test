@@ -2,6 +2,7 @@
 #include "Creature.h"
 #include "Adventure.h"
 #include"Monster.h"
+#include"Rogue.h"
 
 int main()
 {

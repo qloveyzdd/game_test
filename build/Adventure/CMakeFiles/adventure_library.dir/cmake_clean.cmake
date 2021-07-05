@@ -1,5 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/adventure_library.dir/private/Adventure.cpp.o"
+  "CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.o"
+  "CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.o"
+  "CMakeFiles/adventure_library.dir/private/Rogue.cpp.o"
   "libadventure_library.pdb"
   "libadventure_library.so"
 )

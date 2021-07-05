@@ -5,3 +5,8 @@ Adventure/CMakeFiles/adventure_library.dir/private/Adventure.cpp.o: ../Adventure
 Adventure/CMakeFiles/adventure_library.dir/private/Adventure.cpp.o: ../Creature/public/Creature.h
 Adventure/CMakeFiles/adventure_library.dir/private/Adventure.cpp.o: ../Adventure/private/Adventure.cpp
 
+Adventure/CMakeFiles/adventure_library.dir/private/Rogue.cpp.o: ../Adventure/public/Adventure.h
+Adventure/CMakeFiles/adventure_library.dir/private/Rogue.cpp.o: ../Adventure/public/Rogue.h
+Adventure/CMakeFiles/adventure_library.dir/private/Rogue.cpp.o: ../Creature/public/Creature.h
+Adventure/CMakeFiles/adventure_library.dir/private/Rogue.cpp.o: ../Adventure/private/Rogue.cpp
+

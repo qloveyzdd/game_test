@@ -85,7 +85,10 @@
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2,
+				3
 			]
 		}
 	],
@@ -135,7 +138,10 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2,
+				3
 			]
 		}
 	],
@@ -145,6 +151,24 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Adventure/private/Adventure.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Adventure/private/DefensiveMage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Adventure/private/OffensiveMage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Adventure/private/Rogue.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

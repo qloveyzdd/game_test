@@ -152,6 +152,87 @@ private/Adventure.cpp.s:
 	cd /home/qlovey/game_test/build && $(MAKE) -f Adventure/CMakeFiles/adventure_library.dir/build.make Adventure/CMakeFiles/adventure_library.dir/private/Adventure.cpp.s
 .PHONY : private/Adventure.cpp.s
 
+private/DefensiveMage.o: private/DefensiveMage.cpp.o
+
+.PHONY : private/DefensiveMage.o
+
+# target to build an object file
+private/DefensiveMage.cpp.o:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Adventure/CMakeFiles/adventure_library.dir/build.make Adventure/CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.o
+.PHONY : private/DefensiveMage.cpp.o
+
+private/DefensiveMage.i: private/DefensiveMage.cpp.i
+
+.PHONY : private/DefensiveMage.i
+
+# target to preprocess a source file
+private/DefensiveMage.cpp.i:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Adventure/CMakeFiles/adventure_library.dir/build.make Adventure/CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.i
+.PHONY : private/DefensiveMage.cpp.i
+
+private/DefensiveMage.s: private/DefensiveMage.cpp.s
+
+.PHONY : private/DefensiveMage.s
+
+# target to generate assembly for a file
+private/DefensiveMage.cpp.s:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Adventure/CMakeFiles/adventure_library.dir/build.make Adventure/CMakeFiles/adventure_library.dir/private/DefensiveMage.cpp.s
+.PHONY : private/DefensiveMage.cpp.s
+
+private/OffensiveMage.o: private/OffensiveMage.cpp.o
+
+.PHONY : private/OffensiveMage.o
+
+# target to build an object file
+private/OffensiveMage.cpp.o:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Adventure/CMakeFiles/adventure_library.dir/build.make Adventure/CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.o
+.PHONY : private/OffensiveMage.cpp.o
+
+private/OffensiveMage.i: private/OffensiveMage.cpp.i
+
+.PHONY : private/OffensiveMage.i
+
+# target to preprocess a source file
+private/OffensiveMage.cpp.i:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Adventure/CMakeFiles/adventure_library.dir/build.make Adventure/CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.i
+.PHONY : private/OffensiveMage.cpp.i
+
+private/OffensiveMage.s: private/OffensiveMage.cpp.s
+
+.PHONY : private/OffensiveMage.s
+
+# target to generate assembly for a file
+private/OffensiveMage.cpp.s:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Adventure/CMakeFiles/adventure_library.dir/build.make Adventure/CMakeFiles/adventure_library.dir/private/OffensiveMage.cpp.s
+.PHONY : private/OffensiveMage.cpp.s
+
+private/Rogue.o: private/Rogue.cpp.o
+
+.PHONY : private/Rogue.o
+
+# target to build an object file
+private/Rogue.cpp.o:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Adventure/CMakeFiles/adventure_library.dir/build.make Adventure/CMakeFiles/adventure_library.dir/private/Rogue.cpp.o
+.PHONY : private/Rogue.cpp.o
+
+private/Rogue.i: private/Rogue.cpp.i
+
+.PHONY : private/Rogue.i
+
+# target to preprocess a source file
+private/Rogue.cpp.i:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Adventure/CMakeFiles/adventure_library.dir/build.make Adventure/CMakeFiles/adventure_library.dir/private/Rogue.cpp.i
+.PHONY : private/Rogue.cpp.i
+
+private/Rogue.s: private/Rogue.cpp.s
+
+.PHONY : private/Rogue.s
+
+# target to generate assembly for a file
+private/Rogue.cpp.s:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Adventure/CMakeFiles/adventure_library.dir/build.make Adventure/CMakeFiles/adventure_library.dir/private/Rogue.cpp.s
+.PHONY : private/Rogue.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -164,6 +245,15 @@ help:
 	@echo "... private/Adventure.o"
 	@echo "... private/Adventure.i"
 	@echo "... private/Adventure.s"
+	@echo "... private/DefensiveMage.o"
+	@echo "... private/DefensiveMage.i"
+	@echo "... private/DefensiveMage.s"
+	@echo "... private/OffensiveMage.o"
+	@echo "... private/OffensiveMage.i"
+	@echo "... private/OffensiveMage.s"
+	@echo "... private/Rogue.o"
+	@echo "... private/Rogue.i"
+	@echo "... private/Rogue.s"
 .PHONY : help
 
 

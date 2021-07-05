@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/Creature/public",
-                "${workspaceFolder}/Adventure/public"
+                "${workspaceFolder}/Adventure/public",
+                "${workspaceFolder}/Monster/public"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
