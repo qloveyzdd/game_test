@@ -9,7 +9,8 @@
 					"childIndexes" : 
 					[
 						1,
-						2
+						2,
+						3
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -49,6 +50,20 @@
 					[
 						0
 					]
+				},
+				{
+					"build" : "Monster",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Monster",
+					"targetIndexes" : 
+					[
+						3
+					]
 				}
 			],
 			"name" : "Debug",
@@ -59,14 +74,16 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					],
 					"name" : "game",
 					"targetIndexes" : 
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -89,8 +106,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "game::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-game-Debug-0c344dfde4ac9cd40793.json",
+					"jsonFile" : "target-game-Debug-12991d1f07a5bdd00d47.json",
 					"name" : "game",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "monster_library::@8c00790d913f1c36b5d7",
+					"jsonFile" : "target-monster_library-Debug-6e2a8410790660b6c324.json",
+					"name" : "monster_library",
 					"projectIndex" : 0
 				}
 			]

@@ -24,13 +24,7 @@ vector
 Adventure.h
 ../Monster/public/Adventure.h
 
-/home/qlovey/game_test/main.cpp
-iostream
--
-Creature.h
-/home/qlovey/game_test/Creature.h
-Adventure.h
-/home/qlovey/game_test/Adventure.h
+/home/qlovey/game_test/Monster/private/Monster.cpp
 Monster.h
-/home/qlovey/game_test/Monster.h
+/home/qlovey/game_test/Monster/private/Monster.h
 

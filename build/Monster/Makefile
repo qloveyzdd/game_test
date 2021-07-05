@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles /home/qlovey/game_test/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/qlovey/game_test/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles /home/qlovey/game_test/build/Monster/CMakeFiles/progress.marks
+	cd /home/qlovey/game_test/build && $(MAKE) -f CMakeFiles/Makefile2 Monster/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/qlovey/game_test/build && $(MAKE) -f CMakeFiles/Makefile2 Monster/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,97 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/qlovey/game_test/build && $(MAKE) -f CMakeFiles/Makefile2 Monster/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/qlovey/game_test/build && $(MAKE) -f CMakeFiles/Makefile2 Monster/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/qlovey/game_test/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named game
+# Convenience name for target.
+Monster/CMakeFiles/monster_library.dir/rule:
+	cd /home/qlovey/game_test/build && $(MAKE) -f CMakeFiles/Makefile2 Monster/CMakeFiles/monster_library.dir/rule
+.PHONY : Monster/CMakeFiles/monster_library.dir/rule
 
-# Build rule for target.
-game: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 game
-.PHONY : game
+# Convenience name for target.
+monster_library: Monster/CMakeFiles/monster_library.dir/rule
 
-# fast build rule for target.
-game/fast:
-	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
-.PHONY : game/fast
-
-#=============================================================================
-# Target rules for targets named creature_library
-
-# Build rule for target.
-creature_library: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 creature_library
-.PHONY : creature_library
-
-# fast build rule for target.
-creature_library/fast:
-	$(MAKE) -f Creature/CMakeFiles/creature_library.dir/build.make Creature/CMakeFiles/creature_library.dir/build
-.PHONY : creature_library/fast
-
-#=============================================================================
-# Target rules for targets named adventure_library
-
-# Build rule for target.
-adventure_library: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 adventure_library
-.PHONY : adventure_library
-
-# fast build rule for target.
-adventure_library/fast:
-	$(MAKE) -f Adventure/CMakeFiles/adventure_library.dir/build.make Adventure/CMakeFiles/adventure_library.dir/build
-.PHONY : adventure_library/fast
-
-#=============================================================================
-# Target rules for targets named monster_library
-
-# Build rule for target.
-monster_library: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 monster_library
 .PHONY : monster_library
 
 # fast build rule for target.
 monster_library/fast:
-	$(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/build
+	cd /home/qlovey/game_test/build && $(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/build
 .PHONY : monster_library/fast
 
-main.o: main.cpp.o
+private/Monster.o: private/Monster.cpp.o
 
-.PHONY : main.o
+.PHONY : private/Monster.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/main.cpp.o
-.PHONY : main.cpp.o
+private/Monster.cpp.o:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/private/Monster.cpp.o
+.PHONY : private/Monster.cpp.o
 
-main.i: main.cpp.i
+private/Monster.i: private/Monster.cpp.i
 
-.PHONY : main.i
+.PHONY : private/Monster.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/main.cpp.i
-.PHONY : main.cpp.i
+private/Monster.cpp.i:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/private/Monster.cpp.i
+.PHONY : private/Monster.cpp.i
 
-main.s: main.cpp.s
+private/Monster.s: private/Monster.cpp.s
 
-.PHONY : main.s
+.PHONY : private/Monster.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/main.cpp.s
-.PHONY : main.cpp.s
+private/Monster.cpp.s:
+	cd /home/qlovey/game_test/build && $(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/private/Monster.cpp.s
+.PHONY : private/Monster.cpp.s
 
 # Help Target
 help:
@@ -197,13 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... game"
-	@echo "... creature_library"
-	@echo "... adventure_library"
 	@echo "... monster_library"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... private/Monster.o"
+	@echo "... private/Monster.i"
+	@echo "... private/Monster.s"
 .PHONY : help
 
 
@@ -215,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/qlovey/game_test/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

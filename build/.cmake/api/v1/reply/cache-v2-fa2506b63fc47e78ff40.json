@@ -759,7 +759,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "3"
+			"value" : "4"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1156,6 +1156,18 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/qlovey/game_test"
+		},
+		{
+			"name" : "monster_library_LIB_DEPENDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Dependencies for the target"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "general;creature_library;general;adventure_library;"
 		}
 	],
 	"kind" : "cache",

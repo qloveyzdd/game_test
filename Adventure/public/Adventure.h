@@ -10,7 +10,7 @@ enum AdventureType
     DefensiveMages,
 };
 
-class Adventurer : public Creature
+class Adventure : public Creature
 {
 private:
     AdventureType m_type;
@@ -20,8 +20,8 @@ private:
     bool m_isattackedbyclose; //攻击停止
 
 public:
-    Adventurer(int basedamage, std::string name, int age, AdventureType type, int id);
-    virtual ~Adventurer(){};
+    Adventure(int basedamage, std::string name, int age, AdventureType type, int id);
+    virtual ~Adventure(){};
     virtual void CloseAttack(Creature &one) = 0;
     virtual void DistanceAttackNoMp(Creature &a){};
     virtual bool DistanceMagic(Creature &a) { return false; }

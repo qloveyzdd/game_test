@@ -1,6 +1,6 @@
 #include "Adventure.h"
 
-Adventurer::Adventurer(int basedamage, std::string name, int age,AdventureType type, int id)
+Adventure::Adventure(int basedamage, std::string name, int age,AdventureType type, int id)
     : m_name(name), m_age(age),m_type(type)
 {
     m_basedamage = basedamage;

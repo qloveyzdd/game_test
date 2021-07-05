@@ -56,12 +56,14 @@ CMAKE_BINARY_DIR = /home/qlovey/game_test/build
 all: CMakeFiles/game.dir/all
 all: Creature/all
 all: Adventure/all
+all: Monster/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: Creature/preinstall
 preinstall: Adventure/preinstall
+preinstall: Monster/preinstall
 
 .PHONY : preinstall
 
@@ -69,6 +71,7 @@ preinstall: Adventure/preinstall
 clean: CMakeFiles/game.dir/clean
 clean: Creature/clean
 clean: Adventure/clean
+clean: Monster/clean
 
 .PHONY : clean
 
@@ -109,11 +112,30 @@ Creature/clean: Creature/CMakeFiles/creature_library.dir/clean
 .PHONY : Creature/clean
 
 #=============================================================================
+# Directory level rules for directory Monster
+
+# Recursive "all" directory target.
+Monster/all: Monster/CMakeFiles/monster_library.dir/all
+
+.PHONY : Monster/all
+
+# Recursive "preinstall" directory target.
+Monster/preinstall:
+
+.PHONY : Monster/preinstall
+
+# Recursive "clean" directory target.
+Monster/clean: Monster/CMakeFiles/monster_library.dir/clean
+
+.PHONY : Monster/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/game.dir
 
 # All Build rule for target.
 CMakeFiles/game.dir/all: Creature/CMakeFiles/creature_library.dir/all
 CMakeFiles/game.dir/all: Adventure/CMakeFiles/adventure_library.dir/all
+CMakeFiles/game.dir/all: Monster/CMakeFiles/monster_library.dir/all
 	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/depend
 	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=5,6 "Built target game"
@@ -121,7 +143,7 @@ CMakeFiles/game.dir/all: Adventure/CMakeFiles/adventure_library.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles 0
 .PHONY : CMakeFiles/game.dir/rule
@@ -189,6 +211,34 @@ adventure_library: Adventure/CMakeFiles/adventure_library.dir/rule
 Adventure/CMakeFiles/adventure_library.dir/clean:
 	$(MAKE) -f Adventure/CMakeFiles/adventure_library.dir/build.make Adventure/CMakeFiles/adventure_library.dir/clean
 .PHONY : Adventure/CMakeFiles/adventure_library.dir/clean
+
+#=============================================================================
+# Target rules for target Monster/CMakeFiles/monster_library.dir
+
+# All Build rule for target.
+Monster/CMakeFiles/monster_library.dir/all: Creature/CMakeFiles/creature_library.dir/all
+Monster/CMakeFiles/monster_library.dir/all: Adventure/CMakeFiles/adventure_library.dir/all
+	$(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/depend
+	$(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=7,8 "Built target monster_library"
+.PHONY : Monster/CMakeFiles/monster_library.dir/all
+
+# Build rule for subdir invocation for target.
+Monster/CMakeFiles/monster_library.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 Monster/CMakeFiles/monster_library.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles 0
+.PHONY : Monster/CMakeFiles/monster_library.dir/rule
+
+# Convenience name for target.
+monster_library: Monster/CMakeFiles/monster_library.dir/rule
+
+.PHONY : monster_library
+
+# clean rule for target.
+Monster/CMakeFiles/monster_library.dir/clean:
+	$(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/clean
+.PHONY : Monster/CMakeFiles/monster_library.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

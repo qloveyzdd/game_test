@@ -3,5 +3,6 @@
 
 CMakeFiles/game.dir/main.cpp.o: ../Adventure/public/Adventure.h
 CMakeFiles/game.dir/main.cpp.o: ../Creature/public/Creature.h
+CMakeFiles/game.dir/main.cpp.o: ../Monster/public/Monster.h
 CMakeFiles/game.dir/main.cpp.o: ../main.cpp
 
