@@ -44,7 +44,7 @@ GameManager::GameManager()
     }
 }
 
-GameManager* GameManager::GetInstance()
+GameManager *GameManager::GetInstance()
 {
     static GameManager instance;
     return &instance;
@@ -107,25 +107,25 @@ void GameManager::GenerateMonster()
         m_monsters.push_back(new Tiger(m_monsters.size() + 1));
     }
 
-    int n = ReturnRandom(4) - 1;
+    n = ReturnRandom(4) - 1;
     for (int i = 0; i < n; i++)
     {
         m_monsters.push_back(new Eagle(m_monsters.size() + 1));
     }
 
-    int n = ReturnRandom(3) - 1;
+    n = ReturnRandom(3) - 1;
     for (int i = 0; i < n; i++)
     {
         m_monsters.push_back(new Witch(m_monsters.size() + 1));
     }
 
-    int n = ReturnRandom(3) - 1;
+    n = ReturnRandom(3) - 1;
     for (int i = 0; i < n; i++)
     {
         m_monsters.push_back(new Mummy(m_monsters.size() + 1));
     }
 
-    int n = ReturnRandom(2) - 1;
+    n = ReturnRandom(2) - 1;
     for (int i = 0; i < n; i++)
     {
         m_monsters.push_back(new Dragon(m_monsters.size() + 1));
@@ -623,15 +623,19 @@ void GameManager::PassReward()
     switch (dice)
     {
     case 1:
+    {
         int choice = ReturnRandom(m_adventures.size()) - 1;
         m_adventures[choice]->AddMaxHp(20);
         cout << m_adventures[choice]->GetID() << "h号冒险者获得了生命的祝福，血量上限提高了20点" << endl;
         break;
+    }
     case 2:
+    {
         int choice = ReturnRandom(m_adventures.size()) - 1;
         m_adventures[choice]->AddBaseDamaged(8);
         cout << m_adventures[choice]->GetID() << "h号冒险者获得了战神附体，伤害提高了8点" << endl;
         break;
+    }
     default:
         cout << "打扫战场结束，没有发现什么特别的东西" << endl;
         break;

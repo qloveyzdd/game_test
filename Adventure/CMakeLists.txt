@@ -7,4 +7,4 @@ link_directories(../Creature)
 
 add_library(adventure_library SHARED ${adventure})
 
-target_link_libraries(adventure_library PRIVATE creature_library)
+target_link_libraries(adventure_library creature_library)
