@@ -26,12 +26,6 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 18,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
 				"line" : 20,
 				"parent" : 0
 			},
@@ -44,13 +38,19 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 21,
+				"line" : 25,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 1,
 				"file" : 0,
-				"line" : 14,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 23,
 				"parent" : 0
 			},
 			{
@@ -63,6 +63,18 @@
 				"command" : 2,
 				"file" : 0,
 				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 18,
 				"parent" : 0
 			}
 		]
@@ -79,16 +91,20 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"path" : "/home/qlovey/game_test/./Creature/public"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 7,
 					"path" : "/home/qlovey/game_test/./Adventure/public"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
 					"path" : "/home/qlovey/game_test/./Monster/public"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/qlovey/game_test/./GameManager/public"
 				}
 			],
 			"language" : "CXX",
@@ -105,12 +121,16 @@
 			"id" : "creature_library::@35e153a114fec587783f"
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"id" : "adventure_library::@d94b59700e788789329f"
 		},
 		{
-			"backtrace" : 3,
+			"backtrace" : 4,
 			"id" : "monster_library::@8c00790d913f1c36b5d7"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "gamemanager_library::@6bd5da28b4dba184c0cc"
 		}
 	],
 	"id" : "game::@6890427a1f51a3e7e1df",
@@ -127,7 +147,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/home/qlovey/game_test/build/Monster:/home/qlovey/game_test/build/Adventure",
+				"fragment" : "-Wl,-rpath,/home/qlovey/game_test/build/GameManager:/home/qlovey/game_test/build/Monster:/home/qlovey/game_test/build/Adventure",
 				"role" : "libraries"
 			},
 			{
@@ -137,11 +157,16 @@
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "Monster/libmonster_library.so",
+				"fragment" : "GameManager/libgamemanager_library.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
+				"fragment" : "Monster/libmonster_library.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
 				"fragment" : "Adventure/libadventure_library.so",
 				"role" : "libraries"
 			}

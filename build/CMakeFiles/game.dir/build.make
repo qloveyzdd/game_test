@@ -80,6 +80,7 @@ game_EXTERNAL_OBJECTS =
 game: CMakeFiles/game.dir/main.cpp.o
 game: CMakeFiles/game.dir/build.make
 game: Creature/libcreature_library.a
+game: GameManager/libgamemanager_library.so
 game: Monster/libmonster_library.so
 game: Adventure/libadventure_library.so
 game: CMakeFiles/game.dir/link.txt

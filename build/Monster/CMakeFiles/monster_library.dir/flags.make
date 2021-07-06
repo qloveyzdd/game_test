@@ -6,5 +6,5 @@ CXX_FLAGS =  -g -Wall -g -fPIC
 
 CXX_DEFINES = -Dmonster_library_EXPORTS
 
-CXX_INCLUDES = -I/home/qlovey/game_test/Monster/./public -I/home/qlovey/game_test/Monster/../Creature/public -I/home/qlovey/game_test/Monster/../Adventure/public 
+CXX_INCLUDES = -I/home/qlovey/game_test/Monster/./public -I/home/qlovey/game_test/Monster/../Adventure/public -I/home/qlovey/game_test/Monster/../Creature/public 
 

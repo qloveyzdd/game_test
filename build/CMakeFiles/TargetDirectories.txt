@@ -10,3 +10,6 @@
 /home/qlovey/game_test/build/Monster/CMakeFiles/rebuild_cache.dir
 /home/qlovey/game_test/build/Monster/CMakeFiles/edit_cache.dir
 /home/qlovey/game_test/build/Monster/CMakeFiles/monster_library.dir
+/home/qlovey/game_test/build/GameManager/CMakeFiles/rebuild_cache.dir
+/home/qlovey/game_test/build/GameManager/CMakeFiles/edit_cache.dir
+/home/qlovey/game_test/build/GameManager/CMakeFiles/gamemanager_library.dir

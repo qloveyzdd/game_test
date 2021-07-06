@@ -19,13 +19,12 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Monster/./public"
-  "../Monster/../Creature/public"
   "../Monster/../Adventure/public"
+  "../Monster/../Creature/public"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/qlovey/game_test/build/Creature/CMakeFiles/creature_library.dir/DependInfo.cmake"
   "/home/qlovey/game_test/build/Adventure/CMakeFiles/adventure_library.dir/DependInfo.cmake"
   )
 

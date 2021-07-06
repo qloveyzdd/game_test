@@ -57,6 +57,7 @@ all: CMakeFiles/game.dir/all
 all: Creature/all
 all: Adventure/all
 all: Monster/all
+all: GameManager/all
 
 .PHONY : all
 
@@ -64,6 +65,7 @@ all: Monster/all
 preinstall: Creature/preinstall
 preinstall: Adventure/preinstall
 preinstall: Monster/preinstall
+preinstall: GameManager/preinstall
 
 .PHONY : preinstall
 
@@ -72,6 +74,7 @@ clean: CMakeFiles/game.dir/clean
 clean: Creature/clean
 clean: Adventure/clean
 clean: Monster/clean
+clean: GameManager/clean
 
 .PHONY : clean
 
@@ -112,6 +115,24 @@ Creature/clean: Creature/CMakeFiles/creature_library.dir/clean
 .PHONY : Creature/clean
 
 #=============================================================================
+# Directory level rules for directory GameManager
+
+# Recursive "all" directory target.
+GameManager/all: GameManager/CMakeFiles/gamemanager_library.dir/all
+
+.PHONY : GameManager/all
+
+# Recursive "preinstall" directory target.
+GameManager/preinstall:
+
+.PHONY : GameManager/preinstall
+
+# Recursive "clean" directory target.
+GameManager/clean: GameManager/CMakeFiles/gamemanager_library.dir/clean
+
+.PHONY : GameManager/clean
+
+#=============================================================================
 # Directory level rules for directory Monster
 
 # Recursive "all" directory target.
@@ -136,6 +157,7 @@ Monster/clean: Monster/CMakeFiles/monster_library.dir/clean
 CMakeFiles/game.dir/all: Creature/CMakeFiles/creature_library.dir/all
 CMakeFiles/game.dir/all: Adventure/CMakeFiles/adventure_library.dir/all
 CMakeFiles/game.dir/all: Monster/CMakeFiles/monster_library.dir/all
+CMakeFiles/game.dir/all: GameManager/CMakeFiles/gamemanager_library.dir/all
 	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/depend
 	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=8,9 "Built target game"
@@ -143,7 +165,7 @@ CMakeFiles/game.dir/all: Monster/CMakeFiles/monster_library.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles 0
 .PHONY : CMakeFiles/game.dir/rule
@@ -216,11 +238,10 @@ Adventure/CMakeFiles/adventure_library.dir/clean:
 # Target rules for target Monster/CMakeFiles/monster_library.dir
 
 # All Build rule for target.
-Monster/CMakeFiles/monster_library.dir/all: Creature/CMakeFiles/creature_library.dir/all
 Monster/CMakeFiles/monster_library.dir/all: Adventure/CMakeFiles/adventure_library.dir/all
 	$(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/depend
 	$(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=10,11,12,13,14 "Built target monster_library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=12,13,14,15,16 "Built target monster_library"
 .PHONY : Monster/CMakeFiles/monster_library.dir/all
 
 # Build rule for subdir invocation for target.
@@ -239,6 +260,33 @@ monster_library: Monster/CMakeFiles/monster_library.dir/rule
 Monster/CMakeFiles/monster_library.dir/clean:
 	$(MAKE) -f Monster/CMakeFiles/monster_library.dir/build.make Monster/CMakeFiles/monster_library.dir/clean
 .PHONY : Monster/CMakeFiles/monster_library.dir/clean
+
+#=============================================================================
+# Target rules for target GameManager/CMakeFiles/gamemanager_library.dir
+
+# All Build rule for target.
+GameManager/CMakeFiles/gamemanager_library.dir/all: Monster/CMakeFiles/monster_library.dir/all
+	$(MAKE) -f GameManager/CMakeFiles/gamemanager_library.dir/build.make GameManager/CMakeFiles/gamemanager_library.dir/depend
+	$(MAKE) -f GameManager/CMakeFiles/gamemanager_library.dir/build.make GameManager/CMakeFiles/gamemanager_library.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=10,11 "Built target gamemanager_library"
+.PHONY : GameManager/CMakeFiles/gamemanager_library.dir/all
+
+# Build rule for subdir invocation for target.
+GameManager/CMakeFiles/gamemanager_library.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles 14
+	$(MAKE) -f CMakeFiles/Makefile2 GameManager/CMakeFiles/gamemanager_library.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qlovey/game_test/build/CMakeFiles 0
+.PHONY : GameManager/CMakeFiles/gamemanager_library.dir/rule
+
+# Convenience name for target.
+gamemanager_library: GameManager/CMakeFiles/gamemanager_library.dir/rule
+
+.PHONY : gamemanager_library
+
+# clean rule for target.
+GameManager/CMakeFiles/gamemanager_library.dir/clean:
+	$(MAKE) -f GameManager/CMakeFiles/gamemanager_library.dir/build.make GameManager/CMakeFiles/gamemanager_library.dir/clean
+.PHONY : GameManager/CMakeFiles/gamemanager_library.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

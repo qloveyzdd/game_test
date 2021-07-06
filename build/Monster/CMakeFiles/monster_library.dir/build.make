@@ -124,7 +124,6 @@ Monster/libmonster_library.so: Monster/CMakeFiles/monster_library.dir/private/Mo
 Monster/libmonster_library.so: Monster/CMakeFiles/monster_library.dir/private/Mummy.cpp.o
 Monster/libmonster_library.so: Monster/CMakeFiles/monster_library.dir/private/Witch.cpp.o
 Monster/libmonster_library.so: Monster/CMakeFiles/monster_library.dir/build.make
-Monster/libmonster_library.so: Creature/libcreature_library.a
 Monster/libmonster_library.so: Adventure/libadventure_library.so
 Monster/libmonster_library.so: Monster/CMakeFiles/monster_library.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qlovey/game_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libmonster_library.so"

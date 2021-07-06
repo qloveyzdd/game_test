@@ -21,8 +21,6 @@ iostream
 -
 
 ../Monster/public/Monster.h
-Creature.h
-../Monster/public/Creature.h
 vector
 -
 Adventure.h

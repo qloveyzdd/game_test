@@ -10,6 +10,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../Adventure/CMakeLists.txt"
   "../CMakeLists.txt"
   "../Creature/CMakeLists.txt"
+  "../GameManager/CMakeLists.txt"
   "../Monster/CMakeLists.txt"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
@@ -47,6 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Creature/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Adventure/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Monster/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "GameManager/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -55,4 +57,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "Creature/CMakeFiles/creature_library.dir/DependInfo.cmake"
   "Adventure/CMakeFiles/adventure_library.dir/DependInfo.cmake"
   "Monster/CMakeFiles/monster_library.dir/DependInfo.cmake"
+  "GameManager/CMakeFiles/gamemanager_library.dir/DependInfo.cmake"
   )

@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 10,
+				"line" : 9,
 				"parent" : 0
 			},
 			{
@@ -37,21 +37,9 @@
 				"parent" : 0
 			},
 			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 8,
-				"parent" : 0
-			},
-			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 12,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 13,
+				"line" : 11,
 				"parent" : 0
 			},
 			{
@@ -92,16 +80,16 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 6,
+					"backtrace" : 4,
 					"path" : "/home/qlovey/game_test/Monster/./public"
 				},
 				{
-					"backtrace" : 7,
-					"path" : "/home/qlovey/game_test/Monster/../Creature/public"
+					"backtrace" : 5,
+					"path" : "/home/qlovey/game_test/Monster/../Adventure/public"
 				},
 				{
-					"backtrace" : 8,
-					"path" : "/home/qlovey/game_test/Monster/../Adventure/public"
+					"backtrace" : 6,
+					"path" : "/home/qlovey/game_test/Monster/../Creature/public"
 				}
 			],
 			"language" : "CXX",
@@ -117,11 +105,7 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 4,
-			"id" : "creature_library::@35e153a114fec587783f"
-		},
-		{
-			"backtrace" : 5,
+			"backtrace" : 3,
 			"id" : "adventure_library::@d94b59700e788789329f"
 		}
 	],
@@ -136,25 +120,15 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-L/home/qlovey/game_test/Monster/../Creature",
-				"role" : "libraryPath"
-			},
-			{
-				"backtrace" : 3,
 				"fragment" : "-L/home/qlovey/game_test/Monster/../Adventure",
 				"role" : "libraryPath"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/home/qlovey/game_test/Monster/../Creature:/home/qlovey/game_test/Monster/../Adventure:/home/qlovey/game_test/build/Adventure",
+				"fragment" : "-Wl,-rpath,/home/qlovey/game_test/Monster/../Adventure:/home/qlovey/game_test/build/Adventure",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
-				"fragment" : "../Creature/libcreature_library.a",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 5,
+				"backtrace" : 3,
 				"fragment" : "../Adventure/libadventure_library.so",
 				"role" : "libraries"
 			}

@@ -10,7 +10,8 @@
 					[
 						1,
 						2,
-						3
+						3,
+						4
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -62,6 +63,20 @@
 					"source" : "Monster",
 					"targetIndexes" : 
 					[
+						4
+					]
+				},
+				{
+					"build" : "GameManager",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "GameManager",
+					"targetIndexes" : 
+					[
 						3
 					]
 				}
@@ -75,7 +90,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					],
 					"name" : "game",
 					"targetIndexes" : 
@@ -83,7 +99,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -106,14 +123,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "game::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-game-Debug-12991d1f07a5bdd00d47.json",
+					"jsonFile" : "target-game-Debug-bbdda9787d9dbe2d2180.json",
 					"name" : "game",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gamemanager_library::@6bd5da28b4dba184c0cc",
+					"jsonFile" : "target-gamemanager_library-Debug-f3c277adb25b230caa65.json",
+					"name" : "gamemanager_library",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "monster_library::@8c00790d913f1c36b5d7",
-					"jsonFile" : "target-monster_library-Debug-b43b7da5903aeaf4e794.json",
+					"jsonFile" : "target-monster_library-Debug-9fea07453a90db1c728a.json",
 					"name" : "monster_library",
 					"projectIndex" : 0
 				}

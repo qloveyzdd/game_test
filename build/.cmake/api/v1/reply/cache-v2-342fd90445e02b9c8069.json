@@ -759,7 +759,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "4"
+			"value" : "5"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1158,6 +1158,18 @@
 			"value" : "/home/qlovey/game_test"
 		},
 		{
+			"name" : "gamemanager_library_LIB_DEPENDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Dependencies for the target"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "general;monster_library;"
+		},
+		{
 			"name" : "monster_library_LIB_DEPENDS",
 			"properties" : 
 			[
@@ -1167,7 +1179,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "general;creature_library;general;adventure_library;"
+			"value" : "general;adventure_library;"
 		}
 	],
 	"kind" : "cache",

@@ -16,17 +16,35 @@ string
 iostream
 -
 
+../Monster/public/Dragon.h
+Monster.h
 ../Monster/public/Monster.h
-Creature.h
-../Monster/public/Creature.h
+
+../Monster/public/Monster.h
 vector
 -
 Adventure.h
 ../Monster/public/Adventure.h
 
+../Monster/public/Mummy.h
+Monster.h
+../Monster/public/Monster.h
+
 ../Monster/public/Witch.h
 Monster.h
 ../Monster/public/Monster.h
+
+/home/qlovey/game_test/Monster/private/Dragon.cpp
+Dragon.h
+/home/qlovey/game_test/Monster/private/Dragon.h
+
+/home/qlovey/game_test/Monster/private/Monster.cpp
+Monster.h
+/home/qlovey/game_test/Monster/private/Monster.h
+
+/home/qlovey/game_test/Monster/private/Mummy.cpp
+Mummy.h
+/home/qlovey/game_test/Monster/private/Mummy.h
 
 /home/qlovey/game_test/Monster/private/Witch.cpp
 Witch.h
