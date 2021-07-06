@@ -10,4 +10,6 @@ public:
     {
     }
     ~Warrior(){};
+
+    void CloseAttack(Creature &one) { one.BeDamaged(m_basedamage + ReturnRandom()); }
 };
