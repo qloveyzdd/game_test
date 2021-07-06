@@ -12,7 +12,7 @@
 
 GameManager::GameManager()
 {
-    m_names = {"A", "B", "C", "D", "E"};
+    m_names = {"老杨", "书吉", "周伟", "天驰", "老蔡"};
     m_curlevel = 1;
     m_totallevel = 20;
     m_encounterprob = 30; //遇怪几率
@@ -42,6 +42,12 @@ GameManager::GameManager()
             break;
         }
     }
+}
+
+GameManager* GameManager::GetInstance()
+{
+    static GameManager instance;
+    return &instance;
 }
 
 GameManager::~GameManager()
@@ -451,4 +457,270 @@ void GameManager::EveryAdventureAttack()
             }
         }
     }
+}
+
+void GameManager::EveryMonsterAttack()
+{
+    for (auto var : m_monsters)
+    {
+        cout << var->GetID() << "号怪物出动！" << endl;
+        int i = ReturnRandom(m_adventures.size()) - 1;
+
+        if (var->ReturnType() == TIGER || var->ReturnType() == MUMMY)
+        {
+            var->CloseAttack(*m_adventures[i]);
+            m_adventures[i]->SetAttackedByClose(true);
+            cout << var->GetID() << "号怪物对" << m_adventures[i]->GetID() << "号冒险者进行了近身撕咬！" << endl;
+            DeadSettleForAd(i);
+        }
+        else if (var->ReturnType() == EAGLE)
+        {
+            var->DistanceAttackNoMp(*m_adventures[i]);
+            cout << var->GetID() << "号怪物对" << m_adventures[i]->GetID() << "号冒险者进行了羽翼风暴攻击！" << endl;
+            DeadSettleForAd(i);
+        }
+        else if (var->ReturnType() == WITCH)
+        {
+            int i2 = ReturnRandom(m_adventures.size() - i) - 1 + i;
+            int i3 = ReturnRandom(m_adventures.size() - i2) - 1 + i2;
+            if (!var->DistanceMagic(*m_adventures[i], *m_adventures[i2], *m_adventures[i3]))
+            {
+                if (!var->DistanceMagic(*m_adventures[i], *m_adventures[i2]))
+                {
+                    if (!var->DistanceMagic(*m_adventures[i]))
+                    {
+                        var->DistanceAttackNoMp(*m_adventures[i]);
+                        cout << var->GetID() << "号怪物对"
+                             << m_adventures[i]->GetID() << "号冒险者发动了投石攻击" << endl;
+                        DeadSettleForAd(i);
+                    }
+                    else
+                    {
+                        cout << var->GetID() << "号怪物对"
+                             << m_adventures[i]->GetID() << "号冒险者发动了心灵暴振" << endl;
+                        DeadSettleForAd(i);
+                    }
+                }
+                else
+                {
+                    cout << var->GetID() << "号怪物对"
+                         << m_adventures[i]->GetID() << "号冒险者和"
+                         << m_adventures[i2]->GetID() << "号冒险者发动了鸦群攻击" << endl;
+                    DeadSettleForAd(i2);
+                    if (i != i2)
+                    {
+                        DeadSettleForAd(i);
+                    }
+                }
+            }
+            else
+            {
+                cout << var->GetID() << "号怪物对"
+                     << m_adventures[i]->GetID() << "号冒险者和"
+                     << m_adventures[i2]->GetID() << "号冒险者和"
+                     << m_adventures[i3]->GetID() << "号冒险者发动了究极风暴攻击" << endl;
+                DeadSettleForAd(i3);
+                if (i2 != i3)
+                {
+                    DeadSettleForAd(i2);
+                }
+                if (i != i2)
+                {
+                    DeadSettleForAd(i);
+                }
+            }
+        }
+        else if (var->ReturnType() == DRAGON)
+        {
+            if (!var->IsUsedKS())
+            {
+                var->KillSky(m_adventures);
+                cout << "天啊！！！" << var->GetID() << "号怪兽是巨龙！大家小心，它发动大招了！！" << endl;
+                cout << "巨龙：毁天灭地！！！" << endl;
+
+                for (int j = m_adventures.size() - 1; j >= 0; j--)
+                {
+                    DeadSettleForAd(j);
+                }
+            }
+            else
+            {
+                var->DistanceAttackNoMp(*m_adventures[i]);
+                cout << var->GetID() << "号怪物对" << m_adventures[i]->GetID() << "号冒险者发动了巨龙吐息！" << endl;
+                DeadSettleForAd(i);
+            }
+        }
+        if (m_adventures.size() == 0)
+        {
+            break;
+        }
+    }
+}
+
+int GameManager::FindIndexForMonster(const int id) const
+{
+    for (int i = 0; i < m_monsters.size(); i++)
+    {
+        if (m_monsters[i]->GetID() == id)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
+
+int GameManager::FindIndexForAd(const int id) const
+{
+    for (int i = 0; i < m_adventures.size(); i++)
+    {
+        if (m_adventures[i]->GetID() == id)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
+
+void GameManager::DeadSettleForAd(const int index)
+{
+    if (m_adventures[index]->GetHp() <= 0)
+    {
+        cout << m_adventures[index]->GetID() << "号冒险家" << m_adventures[index]->GetName() << "离开了冒险队伍" << endl;
+        m_adventures.erase(m_adventures.begin() + index);
+    }
+    else
+    {
+        cout << m_adventures[index]->GetID() << "号冒险家" << m_adventures[index]->GetName() << "血量还剩下：" << m_adventures[index]->GetHp() << endl;
+    }
+}
+
+void GameManager::DeadSettleForMonster(const int index)
+{
+    if (m_monsters[index]->GetHp() <= 0)
+    {
+        cout << m_monsters[index]->GetID() << "号怪物" << m_monsters[index]->ReturnType() << "死亡" << endl;
+        m_monsters.erase(m_monsters.begin() + index);
+    }
+    else
+    {
+        cout << m_monsters[index]->GetID() << "号怪物" << m_monsters[index]->ReturnType() << "血量还剩下：" << m_monsters[index]->GetHp() << endl;
+    }
+}
+
+void GameManager::PassReward()
+{
+    int coins = ReturnRandom(300) / m_adventures.size();
+    for (auto var : m_adventures)
+    {
+        var->AddMoney(coins);
+        var->HpRestore();
+        var->MpRestore();
+    }
+    cout << "你解决掉了这一关的所有怪物！，在打扫战场时获得了战利品，每个冒险家获得了" << coins << "枚金币";
+
+    int dice = ReturnRandom(3);
+
+    switch (dice)
+    {
+    case 1:
+        int choice = ReturnRandom(m_adventures.size()) - 1;
+        m_adventures[choice]->AddMaxHp(20);
+        cout << m_adventures[choice]->GetID() << "h号冒险者获得了生命的祝福，血量上限提高了20点" << endl;
+        break;
+    case 2:
+        int choice = ReturnRandom(m_adventures.size()) - 1;
+        m_adventures[choice]->AddBaseDamaged(8);
+        cout << m_adventures[choice]->GetID() << "h号冒险者获得了战神附体，伤害提高了8点" << endl;
+        break;
+    default:
+        cout << "打扫战场结束，没有发现什么特别的东西" << endl;
+        break;
+    }
+}
+
+void GameManager::Start()
+{
+    string adventurertype[4] = {"勇士", "刺客", "法师", "牧师"};
+    string monstertype[5] = {"老虎", "鹰", "女巫", "木乃伊", "恶龙"};
+
+    cout << endl
+         << "你的初期冒险团队是：" << endl;
+    for (auto val : m_adventures)
+    {
+        cout << val->GetID() << "号冒险者" << val->GetName() << endl;
+        cout << "年龄：" << val->GetAge() << "  职业：" << adventurertype[val->ReturnType()] << endl;
+    }
+    cout << "冒险开始！" << endl;
+
+    while (m_curlevel <= m_totallevel)
+    {
+        if (IsEncounter())
+        {
+            GenerateMonster();
+            cout << "你在第" << m_curlevel << "hour遭遇了怪物！它们是：" << endl;
+            for (auto var : m_monsters)
+            {
+                cout << var->GetID() << "号怪物:" << monstertype[var->ReturnType()] << endl;
+            }
+            cout << "现在，是你的回合" << endl;
+            while (1)
+            {
+                cout << "轮到你了！" << endl;
+                EveryAdventureAttack();
+                if (m_monsters.size() == 0)
+                {
+                    break;
+                }
+                cout << endl
+                     << "轮到怪物攻击了！" << endl;
+                cout << endl;
+                std::cin.get();
+                std::cin.get();
+                EveryMonsterAttack();
+                if (m_adventures.size() == 0)
+                {
+                    break;
+                }
+
+                cout << endl
+                     << "下一回合开始" << endl;
+
+                cout << endl
+                     << "目前怪物情况:" << endl;
+                for (auto var : m_monsters)
+                {
+                    cout << var->GetID() << "号怪物血量:" << var->GetHp() << endl;
+                }
+                cout << endl
+                     << "目前冒险家情况:" << endl;
+                for (auto var : m_adventures)
+                {
+                    cout << var->GetID() << "号冒险家血量:" << var->GetHp() << " 护甲:" << var->GetArmor() << endl;
+                }
+                cout << endl;
+                std::cin.get();
+            }
+            if (m_monsters.size() == 0) //过关，分配宝物
+            {
+                PassReward();
+            }
+            if (m_adventures.size() == 0)
+            {
+                cout << "游戏失败，您止步于第" << m_curlevel << "关" << endl;
+                std::cin.get();
+                return;
+            }
+        }
+        else
+            cout << "在第" << m_curlevel << "hour没有发生任何事" << endl;
+        m_curlevel++;
+    }
+    cout << endl
+         << "恭喜您通关！" << endl;
+    cout << "存活的冒险家的最终情况为:" << endl;
+    for (auto var : m_adventures)
+    {
+        cout << var->GetID() << "号冒险家:" << var->GetName() << "剩余血量:" << var->GetHp() << "  获得金币" << var->GetMoney() << endl;
+    }
+    return;
 }

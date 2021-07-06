@@ -6,7 +6,8 @@
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/Creature/public",
                 "${workspaceFolder}/Adventure/public",
-                "${workspaceFolder}/Monster/public"
+                "${workspaceFolder}/Monster/public",
+                "${workspaceFolder}/GameManager/public"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

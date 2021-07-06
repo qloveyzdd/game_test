@@ -39,7 +39,3 @@ public:
     void Start();
 
 };
-
-GameManager::~GameManager()
-{
-}

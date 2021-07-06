@@ -1,17 +1,19 @@
 #include <iostream>
-#include "Creature.h"
-#include "Adventure.h"
-#include"Monster.h"
-#include"Rogue.h"
+#include"GameManager.h"
+#include<time.h>
+
+#define MANAGER GameManager::GetInstance()
 
 int main()
 {
-    int d = 0;
-    for (int i = 0; i < 10; i++)
-    {
-        d += i;
-    }
+    srand((unsigned)time(0));
+    char c =0;
 
-    std::cout << "hello world!!" << d << std::endl;
+    while (c != 'e')
+	{
+		MANAGER->Start();
+		cout << endl << "输入e退出，输入其他键重新游戏" << endl;
+		std::cin >> c;
+	}
     return 0;
 }

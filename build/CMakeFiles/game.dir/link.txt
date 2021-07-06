@@ -1,1 +1,0 @@
-/bin/x86_64-linux-gnu-g++-9   -g -Wall -g  -rdynamic CMakeFiles/game.dir/main.cpp.o  -o game  -Wl,-rpath,/home/qlovey/game_test/build/GameManager:/home/qlovey/game_test/build/Monster:/home/qlovey/game_test/build/Adventure Creature/libcreature_library.a GameManager/libgamemanager_library.so Monster/libmonster_library.so Adventure/libadventure_library.so 
