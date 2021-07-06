@@ -9,5 +9,5 @@ public:
     {}
     ~Tiger(){};
 
-    void CloseAttack(Creature&one){one.BeDamaged(m_basedamage + ReturnRandom());}
+    void CloseAttack(Creature &one){one.BeDamaged(m_basedamage + ReturnRandom());}
 };
